@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text Editor</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="editor-container">
+        <div class="editor-header">
+            <button id="bold-btn" class="format-btn">B</button>
+            <button id="italic-btn" class="format-btn">I</button>
+            <button  id="left-align-btn" class="align-btn">Left</button>
+            <button id="center-align-btn" class="align-btn">Center</button>
+            <button id="right-align-btn" class="align-btn">Right</button>
+            <select id="font-selector" class="font-selector">
+                <option value="Arial">Arial</option>
+                <option value="Verdana">Verdana</option>
+                <option value="Tahoma">Tahoma</option>
+            </select>
+            <select id="style-selector" class="style-selector">
+                <option value="normal">Normal</option>
+                <option value="italic">Italic</option>
+                <option value="oblique">Oblique</option>
+            </select>
+        </div>
+        <div class="editor-content" contenteditable="true"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
